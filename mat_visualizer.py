@@ -18,8 +18,8 @@ for ref in eeg['channellabels'][0]:
     label = ''.join(chr(int(c)) for c in ch.flatten())
     ch_labels.append(label)
 
-# Ensure shape is (time, channels)
-if raw_data.shape[0] == len(ch_labels):  # (channels, time)
+
+if raw_data.shape[0] == len(ch_labels):  
     eeg_data = raw_data.T
 else:
     eeg_data = raw_data
@@ -28,22 +28,20 @@ print("✅ Total EEG Channels:", len(ch_labels))
 print("🧠 Available EEG Channels:", ch_labels)
 print("Processed EEG shape:", eeg_data.shape)
 
-# === Extract time vector ===
+
 times = eeg['times'][()].flatten()
 
-# === Extract cursor position data ===
 cursor_x = eeg['cursorpos']['x'][()].flatten()
 cursor_y = eeg['cursorpos']['y'][()].flatten()
 cursor_times = eeg['postimes'][()].flatten()
 
-# === Match postimes to EEG time index ===
 cursor_indices = [np.searchsorted(times, pt) for pt in cursor_times]
 
-# === Compute cursor movement directions ===
+
 vel_x = np.diff(cursor_x)
 vel_y = np.diff(cursor_y)
 
-threshold = 0.01  # Movement threshold
+threshold = 0.01  
 movements = []
 
 for i in range(len(vel_x)):
