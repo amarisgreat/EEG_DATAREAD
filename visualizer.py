@@ -12,7 +12,7 @@ eeg_data = eeg_data.T
 
 # === Extract sampling frequency ===
 sfreq = float(np.squeeze(mat_file['eeg']['fs'][()]))
-print(f"✅ Sampling Frequency: {sfreq} Hz")
+print(f"Sampling Frequency: {sfreq} Hz")
 
 
 
@@ -28,7 +28,7 @@ for ref in label_refs:
         label = ''.join(chr(c) for c in label_bytes[:, 0])
     ch_names.append(label)
 
-print(f"✅ Found {len(ch_names)} EEG Channels:", ch_names)
+print(f" Found {len(ch_names)} EEG Channels:", ch_names)
 
 
 info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
@@ -44,5 +44,5 @@ raw.filter(1.0, 40.0)
 raw.plot(n_channels=15, duration=10, scalings='auto', title="EEG Signal")
 raw.plot_psd(fmax=60, average=True, spatial_colors=True)
 raw.plot_sensors(show_names=True)
-
+raw.plot_topomap()
 plt.show()

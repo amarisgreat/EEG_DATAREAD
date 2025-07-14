@@ -4,7 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 
 # === Load EEG Data ===
-mat_path = "D:/S01/S01_Se01_CL_R01.mat"  # 👈 Use a file that has real MI trials
+mat_path = "D:/S01/S01_Se05_CL_R03.mat"  # 👈 Use a file that has real MI trials
 mat_file = h5py.File(mat_path, "r")
 eeg_data = mat_file['eeg']['data'][()].T
 sfreq = float(np.squeeze(mat_file['eeg']['fs'][()]))

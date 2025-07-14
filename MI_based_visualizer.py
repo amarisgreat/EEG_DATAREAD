@@ -4,7 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 
 # === Load the HDF5-based .mat file ===
-mat_file = h5py.File("D:/S01/S01_Se01_CL_R05.mat", "r")
+mat_file = h5py.File("E:\AMAR\ROBOARM\DATASET\A01T.mat", "r")
 
 # === Extract EEG data ===
 eeg_data = mat_file['eeg']['data'][()]
