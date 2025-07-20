@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # === Load and parse .mat file ===
 mat = scipy.io.loadmat(
-    r"E:\AMAR\ROBOARM\DATASET\A01T.mat",
+    r"E:\AMAR\ROBOARM\DATASET\CLA-SubjectJ-170508-3St-LRHand-Inter.mat",
     struct_as_record=False,
     squeeze_me=True
 )

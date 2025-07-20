@@ -4,7 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 
 
-mat_file = h5py.File("D:/S01/S01_Se01_CL_R05.mat", "r")
+mat_file = h5py.File(r"E:/AMAR/ROBOARM/DATASET/CLA-SubjectJ-170508-3St-LRHand-Inter.mat", "r")
 
 
 

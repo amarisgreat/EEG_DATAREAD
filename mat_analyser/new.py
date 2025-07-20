@@ -4,7 +4,7 @@ from scipy.io import loadmat
 import matplotlib.pyplot as plt
 
 # === Load the data ===
-mat = loadmat(r"C:\Users\Lenovo\Downloads\s01.mat", simplify_cells=True)
+mat = loadmat(r"E:/AMAR/ROBOARM/DATASET/CLA-SubjectJ-170508-3St-LRHand-Inter.mat", simplify_cells=True)
 eeg = mat["eeg"]
 imagery_left = eeg["imagery_left"][:64]   # Use only first 64 channels
 imagery_right = eeg["imagery_right"][:64]
@@ -26,7 +26,6 @@ info.set_montage(montage)
 raw = mne.io.RawArray(all_data * 1e-6, info)  # convert µV to V
 raw.filter(1., 40., fir_design='firwin')
 
-# === Plot sensor positions ===
 raw.plot_sensors(show_names=True)
 
 # === Create events ===

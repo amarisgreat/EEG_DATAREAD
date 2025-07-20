@@ -4,7 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 
 
-filename = r"D:\S02\S02_Se01_Click_R03.mat"# Update if needed
+filename = r"C:\Users\Lenovo\Downloads\s01.mat"# Update if needed
 duration_sec = 3  # Length of each trial
 label_channel = ['C3', 'C4', 'CZ', 'FCZ']
 
