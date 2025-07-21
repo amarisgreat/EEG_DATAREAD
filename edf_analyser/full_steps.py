@@ -59,33 +59,28 @@ epochs = mne.Epochs(raw, events, event_id=event_id, tmin=0, tmax=4,
                     baseline=None, picks='eeg', preload=True)
 epochs.plot(title="Motor Imagery Epochs")
 
-# ------------ Step 7: Extract Data & Labels ----------------
-X = epochs.get_data()  # (n_trials, n_channels, n_times)
-y = epochs.events[:, -1] - 1  # labels: 0 = left, 1 = right
 
-# ------------ Step 8: CSP Feature Extraction ----------------
+X = epochs.get_data()  
+y = epochs.events[:, -1] - 1  
+
 csp = CSP(n_components=4, reg=None, log=True, norm_trace=False)
 X_csp = csp.fit_transform(X, y)
 print("✅ CSP feature shape:", X_csp.shape)
 
-# ------------ Step 9: Save Features ----------------
 df = pd.DataFrame(X_csp, columns=[f'CSP_{i+1}' for i in range(X_csp.shape[1])])
 df['label'] = y
 df.to_csv("csp_features.csv", index=False)
 print("✅ Saved CSP features to csp_features.csv")
 
-# ------------ Step 10: CSP Visualizations ----------------
 csp.plot_patterns(epochs.info, ch_type='eeg', units='Patterns (uV)', size=1.5)
 csp.plot_filters(epochs.info, ch_type='eeg', units='Filters (AU)', size=1.5)
 plt.suptitle('CSP Spatial Patterns')
 
-# ------------ Step 11: Optional: Classifier Accuracy ----------------
 lda = LinearDiscriminantAnalysis()
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 scores = cross_val_score(lda, X_csp, y, cv=cv, scoring='accuracy')
 print(f"🎯 CSP + LDA Accuracy: {np.mean(scores):.2f} ± {np.std(scores):.2f}")
 
-# ------------ Step 12: Additional Visualizations ----------------
 raw.plot(n_channels=10, title="EEG (Post-ICA)")
 raw.plot_psd(fmin=2, fmax=40, average=True)
 plt.show()
