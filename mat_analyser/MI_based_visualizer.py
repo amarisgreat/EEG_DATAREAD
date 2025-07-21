@@ -1,96 +1,115 @@
-import h5py
-import numpy as np
 import mne
+import numpy as np
 import matplotlib.pyplot as plt
+from scipy.io import loadmat
+from mne.channels import make_dig_montage
 
-# === Load the HDF5-based .mat file ===
-mat_file = h5py.File("E:\AMAR\ROBOARM\DATASET\CLA-SubjectJ-170508-3St-LRHand-Inter.mat", "r")
+def visualize_motor_imagery_from_mat(filepath):
+    """
+    Loads motor imagery EEG data from a .mat file, processes it, and
+    visualizes the brain signals (ERD/ERS) corresponding to motor commands.
 
-# === Extract EEG data ===
-eeg_data = mat_file['eeg']['data'][()]
-eeg_data = eeg_data.T  # (n_channels, n_samples)
+    Args:
+        filepath (str): The path to the subject's .mat file.
+    """
+    # --- 1. Load the .mat file ---
+    print(f"Loading data from {filepath}...")
+    mat_data = loadmat(filepath, squeeze_me=True, struct_as_record=False)
 
-# === Sampling Frequency ===
-sfreq = float(np.squeeze(mat_file['eeg']['fs'][()]))
-print(f"Sampling Frequency: {sfreq} Hz")
+    data_key = [k for k in mat_data.keys() if not k.startswith('__')][0]
+    data = mat_data[data_key]
+    print(f"Accessing data structure: '{data_key}'")
 
-# === Channel Names ===
-label_refs = mat_file['eeg']['channellabels'][0]
-ch_names = []
-for ref in label_refs:
-    label_bytes = mat_file[ref][()]
-    label = label_bytes.decode('utf-8') if isinstance(label_bytes, bytes) else ''.join(chr(c) for c in label_bytes[:, 0])
-    ch_names.append(label)
+    # Transpose EEG data to (samples, channels)
+    eeg_data_left = data.imagery_left.T
+    eeg_data_right = data.imagery_right.T
 
-print(f"Found {len(ch_names)} EEG Channels:", ch_names)
+    # Derive channel count directly from data shape
+    num_channels = data.imagery_left.shape[0]
+    print(f"Found {num_channels} channels and {eeg_data_left.shape[0]} samples per trial block.")
 
-# === Create RawArray ===
-info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
-raw = mne.io.RawArray(eeg_data, info)
+    # Create the gap array for combining data
+    sampling_rate = data.srate
+    gap_duration_samples = int(sampling_rate * 2)
+    gap = np.zeros((gap_duration_samples, num_channels))
 
-# === Set Montage ===
-montage = mne.channels.make_standard_montage('standard_1020')
-raw.set_montage(montage, match_case=False, on_missing='ignore')
+    eeg_data_combined = np.vstack([eeg_data_left, gap, eeg_data_right])
 
-# === Bandpass Filter (1–40 Hz) ===
-raw.filter(1.0, 40.0, fir_design='firwin')
+    # --- 2. Create MNE Info Object ---
+    try:
+        ch_names = list(data.senloc.labels)
+        ch_positions_raw = data.senloc.electrodeposition
+        coords_xyz = {ch: pos for ch, pos in zip(ch_names, ch_positions_raw)}
+        montage = make_dig_montage(ch_pos=coords_xyz, coord_frame='head')
+        print("Successfully loaded channel names and positions.")
+    except Exception:
+        print("Could not load channel names/locations. Using generic names.")
+        ch_names = [f'EEG {i+1}' for i in range(num_channels)]
+        montage = None
 
-# === Extract Event Latencies & Labels ===
-lat_refs = mat_file['eeg']['event']['latency'][0]
-event_latencies = [int(np.squeeze(mat_file[ref][()])) for ref in lat_refs]
+    info = mne.create_info(ch_names=ch_names, sfreq=sampling_rate, ch_types='eeg')
+    raw = mne.io.RawArray(eeg_data_combined.T, info)
 
-event_types_ref = mat_file['eeg']['event']['type'][0]
-event_labels = []
-for ref in event_types_ref:
-    label_bytes = mat_file[ref][()]
-    label = label_bytes.decode('utf-8') if isinstance(label_bytes, bytes) else ''.join(chr(c) for c in label_bytes[:, 0])
-    event_labels.append(label)
+    if montage:
+        raw.set_montage(montage)
 
-# === Map event labels to integers ===
-unique_labels = sorted(set(event_labels))
-event_id_map = {label: i + 1 for i, label in enumerate(unique_labels)}
-print("Event ID Map:", event_id_map)
+    # --- 3. Create Events and Epochs ---
+    n_trials_left = data.n_imagery_trials
+    trial_duration_samples = eeg_data_left.shape[0] // n_trials_left
 
-# === Build events array for MNE ===
-events = np.array([
-    [lat, 0, event_id_map[label]]
-    for lat, label in zip(event_latencies, event_labels)
-])
-print(f"Loaded {len(events)} events.")
+    events = []
+    for i in range(n_trials_left):
+        events.append([i * trial_duration_samples, 0, 2])
+    start_sample_right = eeg_data_left.shape[0] + gap_duration_samples
+    for i in range(n_trials_left):
+        events.append([start_sample_right + (i * trial_duration_samples), 0, 3])
 
-# === Define motor cortex channels (exact case match) ===
-motor_channels = [ch for ch in ['C3', 'C4', 'CZ', 'FCZ'] if ch in raw.ch_names]
-print("Using motor cortex channels:", motor_channels)
+    events = np.array(events)
+    event_id = dict(left_hand=2, right_hand=3)
 
-# === Plot 1: Raw EEG Waveforms ===
-raw.plot(
-    picks=motor_channels,
-    duration=10,
-    n_channels=len(motor_channels),
-    title="Motor Cortex EEG - C3, C4, CZ, FCZ",
-    show=True,
-    scalings='auto',
-    block=True
-)
+    # --- 4. Preprocess and Analyze ---
+    print("Filtering data and creating epochs...")
+    raw.filter(l_freq=8., h_freq=30., fir_design='firwin', verbose=False)
+    epochs = mne.Epochs(raw, events, event_id, tmin=-1., tmax=4.,
+                        baseline=(-1, 0), preload=True, verbose=False)
 
-# === Plot 2: Power Spectral Density ===
-psd = raw.compute_psd(fmin=1, fmax=40)
-psd.plot(
-    picks=motor_channels,
-    average=False,
-    spatial_colors=True,
-    show=True,
-    title="PSD: Mu and Beta Activity in Motor Channels"
-)
+    print("Calculating power for each frequency and time point...")
+    freqs = np.arange(8., 31., 1.)
+    n_cycles = freqs / 2.
+    
+    epochs_tfr = mne.time_frequency.tfr_morlet(epochs, freqs=freqs, n_cycles=n_cycles,
+                                             use_fft=True, return_itc=False,
+                                             average=False, decim=2, verbose=False)
 
-# === Plot 3: Topomap for Mu and Beta Bands ===
-psd.plot_topomap(
-    ch_type='eeg',
-    bands=[(8, 13, 'Mu'), (13, 30, 'Beta')],
-    normalize=True,
-    size=1.2,
-    show=True,
-    title="Topomap: Mu and Beta Band Activity"
-)
+    # --- 5. Visualize the Results ---
+    print("Generating plots...")
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6), sharey=True)
+    fig.suptitle('Motor Command Signatures from .mat File', fontsize=16)
 
-plt.show()
+    # --- FIX for ValueError ---
+    # Use the generic channel names that correspond to the C3/C4 locations.
+    # From the paper's Figure 1: C4 is channel 51, C3 is channel 13.
+    pick_c4 = 'EEG 51'
+    pick_c3 = 'EEG 13'
+
+    epochs_tfr['left_hand'].average().plot(picks=[pick_c4], axes=axes[0], colorbar=True,
+                                           show=False)
+    axes[0].set_title(f'Left-Hand Imagery (Channel {pick_c4})')
+    axes[0].axvline(0, linestyle='--', color='red', label='Cue')
+    axes[0].legend()
+
+    epochs_tfr['right_hand'].average().plot(picks=[pick_c3], axes=axes[1], colorbar=True,
+                                            show=False)
+    axes[1].set_title(f'Right-Hand Imagery (Channel {pick_c3})')
+    axes[1].axvline(0, linestyle='--', color='red')
+    # --- End of Fix ---
+
+    plt.tight_layout(rect=[0, 0.03, 1, 0.93])
+    plt.show()
+
+# --- RUN THE ANALYSIS ---
+try:
+    visualize_motor_imagery_from_mat(r'E:\AMAR\ROBOARM\DATASET\GigaDB\s03.mat')
+except FileNotFoundError:
+    print("\nERROR: The specified .mat file was not found.")
+    print("Please ensure the file path is correct.")

@@ -20,7 +20,7 @@
 #     print("\n'eeg' subkeys:")
 #     print(mat['eeg'].keys())
 # else:
-#     print("\n⚠️ 'eeg' key not found.")
+#     print("\n'eeg' key not found.")
 
 
 import scipy.io

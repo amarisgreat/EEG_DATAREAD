@@ -98,9 +98,8 @@ from pymatreader import read_mat
 import mne
 import sys
 
-# ---------- STEP 1: Load the .mat file ----------
-# Use the file path from the user, but have a default for testing.
-file_path = r'E:\AMAR\ROBOARM\DATASET\A01T.mat' 
+
+file_path = r'E:\AMAR\ROBOARM\DATASET\GigaDB\s03.mat'#r'E:\AMAR\ROBOARM\DATASET\A01T.mat'#r'C:\Users\Lenovo\Downloads\s01.mat' 
 try:
     mat = read_mat(file_path)
     print("Successfully loaded .mat file.")
@@ -108,41 +107,38 @@ try:
 except FileNotFoundError:
     print(f"Error: The file was not found at the path: {file_path}")
     print("Please ensure the file path is correct and try again.")
-    sys.exit(1) # Exit the script if the file isn't found
+    sys.exit(1) 
 except Exception as e:
     print(f"An unexpected error occurred while loading the .mat file: {e}")
     sys.exit(1)
 
 
-# ---------- STEP 2: Find EEG-like array (Improved) ----------
 def find_2d_array(d, path=""):
     """
     Recursively find the largest 2D ndarray and return it and its path.
     This version now searches inside lists/tuples.
     """
     if isinstance(d, dict):
-        # Search through dictionary items
+
         for k, v in d.items():
             new_path = f"{path}.{k}" if path else k
             arr, found_path = find_2d_array(v, new_path)
             if arr is not None:
-                return arr, found_path # Propagate the found array up
+                return arr, found_path
     elif isinstance(d, (list, tuple)):
-        # Search through list/tuple items
+
         for i, item in enumerate(d):
             new_path = f"{path}[{i}]"
             arr, found_path = find_2d_array(item, new_path)
             if arr is not None:
                 return arr, found_path
     elif isinstance(d, np.ndarray) and d.ndim == 2:
-        # We found a 2D array. Return it and its path.
+
         return d, path
         
-    # If no 2D array is found in this branch, return None
+
     return None, None
 
-
-# ---------- STEP 3: Find Sampling Frequency (Improved) ----------
 def find_sfreq(d):
     """
     Recursively search for sampling frequency in dicts, lists, and tuples.
@@ -150,29 +146,28 @@ def find_sfreq(d):
     """
     if isinstance(d, dict):
         for k, v in d.items():
-            # Check if the key is a likely candidate for sampling frequency
+
             key_lower = str(k).lower()
             if key_lower in ['sfreq', 'fs', 'samplingrate', 'sampling_rate', 'samplingfrequency']:
                 if isinstance(v, (float, int, np.integer, np.floating)):
                     return float(v)
-                # Handle cases where it's stored as a single-element array
+
                 elif isinstance(v, np.ndarray) and v.size == 1:
                     return float(v.item())
-            
-            # Recurse into nested structures
+
             if isinstance(v, (dict, list, tuple)):
                 result = find_sfreq(v)
                 if result is not None:
                     return result
     elif isinstance(d, (list, tuple)):
-        # If the current item is a list, iterate through its elements
+
         for item in d:
             result = find_sfreq(item)
             if result is not None:
                 return result
     return None
 
-# ---------- STEP 4: Extract and Process EEG Data ----------
+
 eeg, eeg_path = find_2d_array(mat)
 
 if eeg is None:
@@ -182,9 +177,7 @@ if eeg is None:
 else:
     print(f"\nFound potential EEG array under key: '{eeg_path}', with initial shape: {eeg.shape}")
 
-# MNE expects data in the format (n_channels, n_samples).
-# EEG data commonly has many more samples (time points) than channels.
-# If the number of rows is greater than the number of columns, we assume it's (n_samples, n_channels) and transpose it.
+
 if eeg.shape[0] > eeg.shape[1]:
     eeg = eeg.T
     print(f"Transposed array to {eeg.shape} to conform to MNE's (channels, samples) format.")
@@ -192,23 +185,19 @@ if eeg.shape[0] > eeg.shape[1]:
 n_channels, n_samples = eeg.shape
 print(f"Final EEG shape for MNE: {n_channels} channels, {n_samples} samples.")
 
-# ---------- STEP 5: Get Sampling Frequency ----------
 sfreq = find_sfreq(mat)
 if sfreq is None:
-    # The BCI Competition IV-2a dataset (which A01T.mat belongs to) uses 250 Hz.
+
     sfreq = 250.0 
     print(f"\nSampling frequency not found automatically. Using a default of {sfreq} Hz.")
 else:
     print(f"\nFound sampling frequency: {sfreq} Hz")
 
-# ---------- STEP 6: Create MNE RawArray Object ----------
 ch_names = [f"EEG {i+1}" for i in range(n_channels)]
 ch_types = ['eeg'] * n_channels
 info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types=ch_types)
 
-# MNE's plotting functions work best with EEG data in microvolts (uV).
-# If the data's average absolute value is very small, it's likely in Volts (V).
-# We convert it to microvolts by multiplying by 1,000,000.
+
 if np.mean(np.abs(eeg)) < 1e-3:
     eeg = eeg * 1e6
     print("Data values are very small. Assuming units are Volts, converting to microvolts for plotting.")
@@ -216,9 +205,9 @@ if np.mean(np.abs(eeg)) < 1e-3:
 raw = mne.io.RawArray(eeg, info)
 print("\nCreated MNE RawArray object successfully.")
 
-# ---------- STEP 7: Visualize the EEG Data ----------
+
 if __name__ == '__main__':
-    # Set a backend for matplotlib that is known to work well.
+
     try:
         matplotlib.use('Qt5Agg')
     except ImportError:
@@ -228,11 +217,11 @@ if __name__ == '__main__':
     print("\nDisplaying EEG plot. Close the plot window to terminate the script.")
     
     try:
-        # The plot() function with show=True and block=True will pause the script until the window is closed.
+
         raw.plot(
-            n_channels=min(n_channels, 25), # Show a maximum of 25 channels to keep the plot readable
-            duration=10,                    # Show a 10-second window of data
-            scalings='auto',                # Auto-scale the channels
+            n_channels=min(n_channels, 25), 
+            duration=10,                     
+            scalings='auto',                
             title=f"EEG Data from: {eeg_path}",
             show=True, 
             block=True
