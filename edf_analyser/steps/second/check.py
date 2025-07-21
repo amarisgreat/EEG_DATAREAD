@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 # --- 1. Load EEG Data ---
-file_path = r"E:\AMAR\ROBOARM\DATASET\files\S001\S001R03.edf"
+file_path = r".\..\S001R04.edf"
 if not os.path.exists(file_path):
     raise FileNotFoundError("EDF file not found. Place it in the current directory.")
 
