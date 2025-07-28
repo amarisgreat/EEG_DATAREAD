@@ -59,7 +59,7 @@ def preprocess_eeg_file(file_path, output_dir):
         'OZ': 'Oz', 'IZ': 'Iz'
     }
     raw.rename_channels(mapping)
-    montage = mne.channels.make_standard_montage('standard_1020')
+    montage = mne.channels.make_standard_montage('standard_1005')
     raw.set_montage(montage)
     sfreq = raw.info['sfreq']
     print(f" sampling frequency: {sfreq}")
@@ -177,7 +177,7 @@ def preprocess_eeg_file(file_path, output_dir):
 if __name__ == "__main__":
     RECORDS_FILE = r"E:\AMAR\ROBOARM\DATASET\files\RECORDS"
     DATA_DIR = r"E:\AMAR\ROBOARM\DATASET\files" 
-    OUTPUT_DIR = "preprocessed_data"
+    OUTPUT_DIR = "preprocessed_data_1005"
 
     if not os.path.exists(RECORDS_FILE):
         raise FileNotFoundError(f"'{RECORDS_FILE}' not found. Please ensure it's in the directory.")
