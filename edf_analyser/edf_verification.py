@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 
-file_path = r".\steps\S001R04.edf"
+file_path = r"E:\AMAR\ROBOARM\DATASET\files\S001\S001R03.edf"
 if not os.path.exists(file_path):
     raise FileNotFoundError("EDF file not found. Place it in the current directory.")
 
@@ -74,18 +74,18 @@ X = epochs.get_data()
 csp = CSP(n_components=4, log=True)
 
 X_csp = csp.fit_transform(X, labels)
-# A. Print shape of CSP features
-print("CSP output shape:", X_csp.shape)  # Should be (n_epochs, n_components)
 
-# B. Plot CSP patterns (spatial filters)
+print("CSP output shape:", X_csp.shape)  
+
+
 fig_patterns = csp.plot_patterns(epochs.info, ch_type='eeg', units='Patterns (AU)', show=True)
 fig_patterns.savefig("figures/csp_patterns.png", dpi=300)
 
-# C. OPTIONAL: Plot CSP features across trials to see separability
+
 import seaborn as sns
 import pandas as pd
 
-# Create DataFrame for plotting
+
 df = pd.DataFrame(X_csp, columns=[f"CSP{i+1}" for i in range(X_csp.shape[1])])
 df['label'] = labels
 
@@ -103,8 +103,8 @@ for band_name, (fmin, fmax) in bands.items():
     band_epochs = epochs.copy().filter(fmin, fmax, fir_design='firwin')
     data = band_epochs.get_data()
 
-    baseline_power = np.mean(data[:, :, :int(1*sfreq)] ** 2, axis=2)  # −1 to 0 sec
-    task_power = np.mean(data[:, :, int(1*sfreq):] ** 2, axis=2)      # 0 to 4 sec
+    baseline_power = np.mean(data[:, :, :int(1*sfreq)] ** 2, axis=2)  
+    task_power = np.mean(data[:, :, int(1*sfreq):] ** 2, axis=2)      
 
     erd = 10 * np.log10(task_power / baseline_power)
     X_erd.append(erd)
@@ -112,8 +112,8 @@ for band_name, (fmin, fmax) in bands.items():
 X_erd_combined = np.concatenate(X_erd, axis=1)  
 
 
-# ERD/ERS Visualization (Topomap)
-erd_mean = np.mean(erd, axis=0)  # average across epochs
+
+erd_mean = np.mean(erd, axis=0)  
 erd_std = np.std(erd, axis=0)
 
 for band_name, (fmin, fmax) in bands.items():

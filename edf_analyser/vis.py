@@ -1,15 +1,15 @@
 import mne
 import numpy as np
 
-# === Load EDF ===
+
 edf_path = r"E:\AMAR\ROBOARM\DATASET\files\S001\S001R04.edf"
 run_number = int(edf_path.split('R')[-1].split('.')[0])
 
-# === Load EEG data ===
+
 raw = mne.io.read_raw_edf(edf_path, preload=True, verbose=False)
 annotations = raw.annotations
 
-# === Define class label and color maps ===
+
 CLASS_LABELS = {
     'T0': (0, 'Rest'),
     'T1': {
@@ -28,6 +28,7 @@ CLASS_LABELS = {
     },
     'T2': {
         3: (2, 'Real Right Fist'),
+        
         4: (4, 'Imagined Right Fist'),
         5: (6, 'Real Both Feet'),
         6: (8, 'Imagined Both Feet'),
@@ -70,17 +71,16 @@ for onset, duration, desc in zip(annotations.onset, annotations.duration, annota
                 continue
             class_id, class_name = CLASS_LABELS[desc][run_number]
 
-        # Store onset sample for plotting
         sample = int(onset * sfreq)
         events.append([sample, 0, class_id])
         event_id[class_name] = class_id
 
         print(f"Label: {class_name:22s} | ID: {class_id} | Onset: {onset:7.2f}s | Duration: {duration:5.2f}s")
 
-# Convert to NumPy array
+
 events = np.array(events)
 
-# === Plot ===
+
 raw.plot(
     events=events,
     event_id=event_id,
@@ -93,7 +93,7 @@ raw.plot(
     block=True
 )
 
-# === Class Legend ===
+
 print("\n[CLASS MAPPING USED]")
 for class_id, color in CLASS_COLORS.items():
     names = [name for name, cid in event_id.items() if cid == class_id]

@@ -14,7 +14,7 @@ raw = mne.io.read_raw_edf(file_path, preload=True, verbose=False)
 
 print(raw.annotations)
 
-# print(raw.info)
+print(raw.info)
 # print(raw.ch_names)
 
 # new_names = {ch: ch.replace('.', '').upper() for ch in raw.ch_names}

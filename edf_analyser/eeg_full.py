@@ -19,28 +19,28 @@ def get_class_ids_from_run(run_number):
     elif run_number in [6, 10, 14]:
         return {'rest': 0, 'imagined_both_fists': 1, 'imagined_both_feet': 2}
     else:
-        # For baseline runs (1, 2) or any other case
+
         return None
 
 def preprocess_eeg_file(file_path, output_dir):
     """
     Applies the full preprocessing pipeline to a single EDF file.
     """
-    # --- 1. Load and Prepare Data ---
+
     try:
         raw = mne.io.read_raw_edf(file_path, preload=True, verbose=False)
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
         return
 
-    # Extract run number from filename
+
     match = re.search(r'R(\d+)\.edf$', file_path)
     if not match:
         print(f"Could not extract run number from {file_path}. Skipping.")
         return
     run_number = int(match.group(1))
 
-    # Get the correct class mapping for this run
+
     class_name_map = get_class_ids_from_run(run_number)
     if class_name_map is None:
         print(f"Skipping baseline run: {file_path}")
@@ -50,7 +50,7 @@ def preprocess_eeg_file(file_path, output_dir):
     print(f"Processing {base_filename} with tasks: {list(class_name_map.keys())}")
 
 
-    # --- 2. Channel Names and Montage ---
+ 
     new_names = {ch: ch.replace('.', '').upper() for ch in raw.ch_names}
     raw.rename_channels(new_names)
     mapping = {
@@ -79,36 +79,31 @@ def preprocess_eeg_file(file_path, output_dir):
     except Exception:
         print(f"No EOG channels found or other EOG error for {base_filename}.")
 
-    # ICA is not great at finding ECG from EEG data without a dedicated ECG channel
-    # This part is often skipped if no ECG channel is present.
-    # If you had an ECG channel, you would use ica.find_bads_ecg
+
 
     ica.apply(raw)
 
-    # --- 5. Event Extraction ---
+
     try:
         events, event_id_from_file = mne.events_from_annotations(raw)
     except ValueError:
         print(f"No events found in {base_filename}. Skipping.")
         return
         
-    # Map T0, T1, T2 from file to our new labels
-# Fix: Use string keys as required by MNE
+
     event_mapping = {
         'rest': event_id_from_file['T0'],
         list(class_name_map.keys())[1]: event_id_from_file['T1'],
         list(class_name_map.keys())[2]: event_id_from_file['T2'],
     }
 
-    
-    # Create epochs with the new labels
+
     epochs = mne.Epochs(raw, events, event_id=event_mapping, tmin=-1., tmax=4.,
                         picks='eeg', baseline=(None, 0), preload=True)
 
     labels = epochs.events[:, -1]
     X = epochs.get_data()
 
-    # --- 6. CSP Feature Extraction ---
     unique_classes = np.unique(labels)
     if len(unique_classes) < 2:
         print(f"Not enough classes to compute CSP for {base_filename}. Skipping.")

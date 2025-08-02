@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
 # -------- Load and Filter Data --------
-raw = mne.io.read_raw_edf(r"E:\AMAR\ROBOARM\DATASET\files\S001\S001R03.edf", preload=True)
+raw = mne.io.read_raw_edf(r"E:\AMAR\ROBOARM\DATASET\files\S001\S001R04.edf", preload=True)
 raw.rename_channels(lambda x: x.strip('.'))  # Remove trailing dots if any
 raw.filter(7., 30., fir_design='firwin')     # Filter to Mu (8–12 Hz) + Beta (13–30 Hz) bands
 raw.set_montage("standard_1020", match_case=False)
