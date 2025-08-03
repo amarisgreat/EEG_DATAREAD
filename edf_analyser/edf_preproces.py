@@ -83,7 +83,7 @@ for subj_id in range(1, 110):
             # Annotations and Epochs
             events, event_id = mne.events_from_annotations(raw)
             if not all(k in event_id for k in ["T1", "T2"]):
-                print(f"⚠️ Missing T1/T2 in {run_name}, skipping.")
+                print(f" Missing T1/T2 in {run_name}, skipping.")
                 continue
 
             class_ids = {'class1': event_id['T1'], 'class2': event_id['T2']}

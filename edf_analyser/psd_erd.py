@@ -10,13 +10,14 @@ def get_class_ids_from_run(run_number):
     if run_number in [3, 7, 11]:
         return {'rest': 0, 'real_left_fist': 1, 'real_right_fist': 2}
     elif run_number in [4, 8, 12]:
-        return {'rest': 0, 'imagined_left_fist': 1, 'imagined_right_fist': 2}
+        return {'rest': 0, 'imagined_left_fist': 3, 'imagined_right_fist': 4}
     elif run_number in [5, 9, 13]:
-        return {'rest': 0, 'real_both_fists': 1, 'real_both_feet': 2}
+        return {'rest': 0, 'real_both_fists': 5, 'real_both_feet': 6}
     elif run_number in [6, 10, 14]:
-        return {'rest': 0, 'imagined_both_fists': 1, 'imagined_both_feet': 2}
+        return {'rest': 0, 'imagined_both_fists': 7, 'imagined_both_feet': 8}
     else:
         return None
+
 
 def preprocess_eeg_file(file_path, output_dir):
     try:

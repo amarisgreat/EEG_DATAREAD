@@ -1,0 +1,873 @@
+Subject,Run,Task,Accuracy,Precision,Recall,F1
+S001,3.0,S001 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S001,4.0,S001 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S001,7.0,S001 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S001,8.0,S001 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S001,11.0,S001 Run 11: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S001,12.0,S001 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S002,3.0,S002 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S002,4.0,S002 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S002,7.0,S002 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S002,8.0,S002 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S002,11.0,S002 Run 11: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S002,12.0,S002 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S003,3.0,S003 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S003,4.0,S003 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S003,7.0,S003 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S003,8.0,S003 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S003,11.0,S003 Run 11: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S003,12.0,S003 Run 12: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S004,3.0,S004 Run 3: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S004,4.0,S004 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S004,7.0,S004 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S004,8.0,S004 Run 8: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S004,11.0,S004 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S004,12.0,S004 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S005,3.0,S005 Run 3: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S005,4.0,S005 Run 4: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S005,7.0,S005 Run 7: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S005,8.0,S005 Run 8: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S005,11.0,S005 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S005,12.0,S005 Run 12: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S006,3.0,S006 Run 3: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S006,4.0,S006 Run 4: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S006,7.0,S006 Run 7: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S006,8.0,S006 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S006,11.0,S006 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S006,12.0,S006 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S007,3.0,S007 Run 3: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S007,4.0,S007 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S007,7.0,S007 Run 7: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S007,8.0,S007 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S007,11.0,S007 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S007,12.0,S007 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S008,3.0,S008 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S008,4.0,S008 Run 4: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S008,7.0,S008 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S008,8.0,S008 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S008,11.0,S008 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S008,12.0,S008 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S009,3.0,S009 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S009,4.0,S009 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S009,7.0,S009 Run 7: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S009,8.0,S009 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S009,11.0,S009 Run 11: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S009,12.0,S009 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S010,3.0,S010 Run 3: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S010,4.0,S010 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S010,7.0,S010 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S010,8.0,S010 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S010,11.0,S010 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S010,12.0,S010 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S011,3.0,S011 Run 3: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S011,4.0,S011 Run 4: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S011,7.0,S011 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S011,8.0,S011 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S011,11.0,S011 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S011,12.0,S011 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S012,3.0,S012 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S012,4.0,S012 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S012,7.0,S012 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S012,8.0,S012 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S012,11.0,S012 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S012,12.0,S012 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S013,3.0,S013 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S013,4.0,S013 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S013,7.0,S013 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S013,8.0,S013 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S013,11.0,S013 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S013,12.0,S013 Run 12: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S014,3.0,S014 Run 3: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S014,4.0,S014 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S014,7.0,S014 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S014,8.0,S014 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S014,11.0,S014 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S014,12.0,S014 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S015,3.0,S015 Run 3: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S015,4.0,S015 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S015,7.0,S015 Run 7: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S015,8.0,S015 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S015,11.0,S015 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S015,12.0,S015 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S016,3.0,S016 Run 3: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S016,4.0,S016 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S016,7.0,S016 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S016,8.0,S016 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S016,11.0,S016 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S016,12.0,S016 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S017,3.0,S017 Run 3: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S017,4.0,S017 Run 4: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S017,7.0,S017 Run 7: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S017,8.0,S017 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S017,11.0,S017 Run 11: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S017,12.0,S017 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S018,3.0,S018 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S018,4.0,S018 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S018,7.0,S018 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S018,8.0,S018 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S018,11.0,S018 Run 11: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S018,12.0,S018 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S019,3.0,S019 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S019,4.0,S019 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S019,7.0,S019 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S019,8.0,S019 Run 8: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S019,11.0,S019 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S019,12.0,S019 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S020,3.0,S020 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S020,4.0,S020 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S020,7.0,S020 Run 7: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S020,8.0,S020 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S020,11.0,S020 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S020,12.0,S020 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S021,3.0,S021 Run 3: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S021,4.0,S021 Run 4: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S021,7.0,S021 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S021,8.0,S021 Run 8: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S021,11.0,S021 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S021,12.0,S021 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S022,3.0,S022 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S022,4.0,S022 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S022,7.0,S022 Run 7: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S022,8.0,S022 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S022,11.0,S022 Run 11: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S022,12.0,S022 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S023,3.0,S023 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S023,4.0,S023 Run 4: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S023,7.0,S023 Run 7: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S023,8.0,S023 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S023,11.0,S023 Run 11: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S023,12.0,S023 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S024,3.0,S024 Run 3: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S024,4.0,S024 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S024,7.0,S024 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S024,8.0,S024 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S024,11.0,S024 Run 11: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S024,12.0,S024 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S025,3.0,S025 Run 3: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S025,4.0,S025 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S025,7.0,S025 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S025,8.0,S025 Run 8: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S025,11.0,S025 Run 11: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S025,12.0,S025 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S026,3.0,S026 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S026,4.0,S026 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S026,7.0,S026 Run 7: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S026,8.0,S026 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S026,11.0,S026 Run 11: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S026,12.0,S026 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S027,3.0,S027 Run 3: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S027,4.0,S027 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S027,7.0,S027 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S027,8.0,S027 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S027,11.0,S027 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S027,12.0,S027 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S028,3.0,S028 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S028,4.0,S028 Run 4: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S028,7.0,S028 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S028,8.0,S028 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S028,11.0,S028 Run 11: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S028,12.0,S028 Run 12: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S029,3.0,S029 Run 3: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S029,4.0,S029 Run 4: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S029,7.0,S029 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S029,8.0,S029 Run 8: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S029,11.0,S029 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S029,12.0,S029 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S030,3.0,S030 Run 3: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S030,4.0,S030 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S030,7.0,S030 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S030,8.0,S030 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S030,11.0,S030 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S030,12.0,S030 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S031,3.0,S031 Run 3: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S031,4.0,S031 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S031,7.0,S031 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S031,8.0,S031 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S031,11.0,S031 Run 11: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S031,12.0,S031 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S032,3.0,S032 Run 3: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S032,4.0,S032 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S032,7.0,S032 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S032,8.0,S032 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S032,11.0,S032 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S032,12.0,S032 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S033,3.0,S033 Run 3: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S033,4.0,S033 Run 4: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S033,7.0,S033 Run 7: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S033,8.0,S033 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S033,11.0,S033 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S033,12.0,S033 Run 12: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S034,3.0,S034 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S034,4.0,S034 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S034,7.0,S034 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S034,8.0,S034 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S034,11.0,S034 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S034,12.0,S034 Run 12: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S035,3.0,S035 Run 3: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S035,4.0,S035 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S035,7.0,S035 Run 7: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S035,8.0,S035 Run 8: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S035,11.0,S035 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S035,12.0,S035 Run 12: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S036,3.0,S036 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S036,4.0,S036 Run 4: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S036,7.0,S036 Run 7: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S036,8.0,S036 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S036,11.0,S036 Run 11: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S036,12.0,S036 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S037,3.0,S037 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S037,4.0,S037 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S037,7.0,S037 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S037,8.0,S037 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S037,11.0,S037 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S037,12.0,S037 Run 12: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S038,3.0,S038 Run 3: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S038,4.0,S038 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S038,7.0,S038 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S038,8.0,S038 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S038,11.0,S038 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S038,12.0,S038 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S039,3.0,S039 Run 3: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S039,4.0,S039 Run 4: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S039,7.0,S039 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S039,8.0,S039 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S039,11.0,S039 Run 11: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S039,12.0,S039 Run 12: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S040,3.0,S040 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S040,4.0,S040 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S040,7.0,S040 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S040,8.0,S040 Run 8: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S040,11.0,S040 Run 11: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S040,12.0,S040 Run 12: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S041,3.0,S041 Run 3: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S041,4.0,S041 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S041,7.0,S041 Run 7: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S041,8.0,S041 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S041,11.0,S041 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S041,12.0,S041 Run 12: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S042,3.0,S042 Run 3: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S042,4.0,S042 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S042,7.0,S042 Run 7: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S042,8.0,S042 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S042,11.0,S042 Run 11: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S042,12.0,S042 Run 12: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S043,3.0,S043 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S043,4.0,S043 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S043,7.0,S043 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S043,8.0,S043 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S043,11.0,S043 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S043,12.0,S043 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S044,3.0,S044 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S044,4.0,S044 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S044,7.0,S044 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S044,8.0,S044 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S044,11.0,S044 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S044,12.0,S044 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S045,3.0,S045 Run 3: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S045,4.0,S045 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S045,7.0,S045 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S045,8.0,S045 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S045,11.0,S045 Run 11: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S045,12.0,S045 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S046,3.0,S046 Run 3: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S046,4.0,S046 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S046,7.0,S046 Run 7: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S046,8.0,S046 Run 8: Imagined Left vs Imagined Right,0.6,1.0,0.3333,0.5
+S046,11.0,S046 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S046,12.0,S046 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S047,3.0,S047 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S047,4.0,S047 Run 4: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S047,7.0,S047 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S047,8.0,S047 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S047,11.0,S047 Run 11: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S047,12.0,S047 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S048,3.0,S048 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S048,4.0,S048 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S048,7.0,S048 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S048,8.0,S048 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S048,11.0,S048 Run 11: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S048,12.0,S048 Run 12: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S049,3.0,S049 Run 3: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S049,4.0,S049 Run 4: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S049,7.0,S049 Run 7: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S049,8.0,S049 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S049,11.0,S049 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S049,12.0,S049 Run 12: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S050,3.0,S050 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S050,4.0,S050 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S050,7.0,S050 Run 7: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S050,8.0,S050 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S050,11.0,S050 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S050,12.0,S050 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S051,3.0,S051 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S051,4.0,S051 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S051,7.0,S051 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S051,8.0,S051 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S051,11.0,S051 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S051,12.0,S051 Run 12: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S052,3.0,S052 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S052,4.0,S052 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S052,7.0,S052 Run 7: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S052,8.0,S052 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S052,11.0,S052 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S052,12.0,S052 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S053,3.0,S053 Run 3: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S053,4.0,S053 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S053,7.0,S053 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S053,8.0,S053 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S053,11.0,S053 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S053,12.0,S053 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S054,3.0,S054 Run 3: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S054,4.0,S054 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S054,7.0,S054 Run 7: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S054,8.0,S054 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S054,11.0,S054 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S054,12.0,S054 Run 12: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S055,3.0,S055 Run 3: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S055,4.0,S055 Run 4: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S055,7.0,S055 Run 7: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S055,8.0,S055 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S055,11.0,S055 Run 11: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S055,12.0,S055 Run 12: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S056,3.0,S056 Run 3: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S056,4.0,S056 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S056,7.0,S056 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S056,8.0,S056 Run 8: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S056,11.0,S056 Run 11: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S056,12.0,S056 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S057,3.0,S057 Run 3: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S057,4.0,S057 Run 4: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S057,7.0,S057 Run 7: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S057,8.0,S057 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S057,11.0,S057 Run 11: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S057,12.0,S057 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S058,3.0,S058 Run 3: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S058,4.0,S058 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S058,7.0,S058 Run 7: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S058,8.0,S058 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S058,11.0,S058 Run 11: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S058,12.0,S058 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S059,3.0,S059 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S059,4.0,S059 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S059,7.0,S059 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S059,8.0,S059 Run 8: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S059,11.0,S059 Run 11: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S059,12.0,S059 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S060,3.0,S060 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S060,4.0,S060 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S060,7.0,S060 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S060,8.0,S060 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S060,11.0,S060 Run 11: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S060,12.0,S060 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S061,3.0,S061 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S061,4.0,S061 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S061,7.0,S061 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S061,8.0,S061 Run 8: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S061,11.0,S061 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S061,12.0,S061 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S062,3.0,S062 Run 3: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S062,4.0,S062 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S062,7.0,S062 Run 7: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S062,8.0,S062 Run 8: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S062,11.0,S062 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S062,12.0,S062 Run 12: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S063,3.0,S063 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S063,4.0,S063 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S063,7.0,S063 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S063,8.0,S063 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S063,11.0,S063 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S063,12.0,S063 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S064,3.0,S064 Run 3: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S064,4.0,S064 Run 4: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S064,7.0,S064 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S064,8.0,S064 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S064,11.0,S064 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S064,12.0,S064 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S065,3.0,S065 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S065,4.0,S065 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S065,7.0,S065 Run 7: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S065,8.0,S065 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S065,11.0,S065 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S065,12.0,S065 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S066,3.0,S066 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S066,4.0,S066 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S066,7.0,S066 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S066,8.0,S066 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S066,11.0,S066 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S066,12.0,S066 Run 12: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S067,3.0,S067 Run 3: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S067,4.0,S067 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S067,7.0,S067 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S067,8.0,S067 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S067,11.0,S067 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S067,12.0,S067 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S068,3.0,S068 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S068,4.0,S068 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S068,7.0,S068 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S068,8.0,S068 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S068,11.0,S068 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S068,12.0,S068 Run 12: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S069,3.0,S069 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S069,4.0,S069 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S069,7.0,S069 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S069,8.0,S069 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S069,11.0,S069 Run 11: Real Left vs Real Right,0.0,0.0,0.0,0.0
+S069,12.0,S069 Run 12: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S070,3.0,S070 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S070,4.0,S070 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S070,7.0,S070 Run 7: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S070,8.0,S070 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S070,11.0,S070 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S070,12.0,S070 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S071,3.0,S071 Run 3: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S071,4.0,S071 Run 4: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S071,7.0,S071 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S071,8.0,S071 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S071,11.0,S071 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S071,12.0,S071 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S072,3.0,S072 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S072,4.0,S072 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S072,7.0,S072 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S072,8.0,S072 Run 8: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S072,11.0,S072 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S072,12.0,S072 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S073,3.0,S073 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S073,4.0,S073 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S073,7.0,S073 Run 7: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S073,8.0,S073 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S073,11.0,S073 Run 11: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S073,12.0,S073 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S074,3.0,S074 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S074,4.0,S074 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S074,7.0,S074 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S074,8.0,S074 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S074,11.0,S074 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S074,12.0,S074 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S075,3.0,S075 Run 3: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S075,4.0,S075 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S075,7.0,S075 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S075,8.0,S075 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S075,11.0,S075 Run 11: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S075,12.0,S075 Run 12: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S076,3.0,S076 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S076,4.0,S076 Run 4: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S076,7.0,S076 Run 7: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S076,8.0,S076 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S076,11.0,S076 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S076,12.0,S076 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S077,3.0,S077 Run 3: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S077,4.0,S077 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S077,7.0,S077 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S077,8.0,S077 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S077,11.0,S077 Run 11: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S077,12.0,S077 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S078,3.0,S078 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S078,4.0,S078 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S078,7.0,S078 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S078,8.0,S078 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S078,11.0,S078 Run 11: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S078,12.0,S078 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S079,3.0,S079 Run 3: Real Left vs Real Right,1.0,1.0,1.0,1.0
+S079,4.0,S079 Run 4: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S079,7.0,S079 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S079,8.0,S079 Run 8: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S079,11.0,S079 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S079,12.0,S079 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S080,3.0,S080 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S080,4.0,S080 Run 4: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S080,7.0,S080 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S080,8.0,S080 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S080,11.0,S080 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S080,12.0,S080 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S081,3.0,S081 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S081,4.0,S081 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S081,7.0,S081 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S081,8.0,S081 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S081,11.0,S081 Run 11: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S081,12.0,S081 Run 12: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S082,3.0,S082 Run 3: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S082,4.0,S082 Run 4: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S082,7.0,S082 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S082,8.0,S082 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S082,11.0,S082 Run 11: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S082,12.0,S082 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S083,3.0,S083 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S083,4.0,S083 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S083,7.0,S083 Run 7: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S083,8.0,S083 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S083,11.0,S083 Run 11: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S083,12.0,S083 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S084,3.0,S084 Run 3: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S084,4.0,S084 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S084,7.0,S084 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S084,8.0,S084 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S084,11.0,S084 Run 11: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S084,12.0,S084 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S085,3.0,S085 Run 3: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S085,4.0,S085 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S085,7.0,S085 Run 7: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S085,8.0,S085 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S085,11.0,S085 Run 11: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S085,12.0,S085 Run 12: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S086,3.0,S086 Run 3: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S086,4.0,S086 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S086,7.0,S086 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S086,8.0,S086 Run 8: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S086,11.0,S086 Run 11: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S086,12.0,S086 Run 12: Imagined Left vs Imagined Right,0.0,0.0,0.0,0.0
+S087,3.0,S087 Run 3: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S087,4.0,S087 Run 4: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S087,7.0,S087 Run 7: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S087,8.0,S087 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S087,11.0,S087 Run 11: Real Left vs Real Right,0.4,0.5,0.6667,0.5714
+S087,12.0,S087 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S088,3.0,S088 Run 3: Real Left vs Real Right,0.5,0.5,1.0,0.6667
+S088,4.0,S088 Run 4: Imagined Left vs Imagined Right,0.5,0.5,0.3333,0.4
+S088,7.0,S088 Run 7: Real Left vs Real Right,0.3333,0.0,0.0,0.0
+S088,8.0,S088 Run 8: Imagined Left vs Imagined Right,0.6667,0.6,1.0,0.75
+S088,11.0,S088 Run 11: Real Left vs Real Right,0.3333,0.4,0.6667,0.5
+S088,12.0,S088 Run 12: Imagined Left vs Imagined Right,0.6667,0.6,1.0,0.75
+S089,3.0,S089 Run 3: Real Left vs Real Right,0.4286,0.4,0.6667,0.5
+S089,4.0,S089 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S089,7.0,S089 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S089,8.0,S089 Run 8: Imagined Left vs Imagined Right,0.6,0.5,1.0,0.6667
+S089,11.0,S089 Run 11: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S089,12.0,S089 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S090,3.0,S090 Run 3: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S090,4.0,S090 Run 4: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S090,7.0,S090 Run 7: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S090,8.0,S090 Run 8: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S090,11.0,S090 Run 11: Real Left vs Real Right,0.8,1.0,0.6667,0.8
+S090,12.0,S090 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S091,3.0,S091 Run 3: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S091,4.0,S091 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S091,7.0,S091 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S091,8.0,S091 Run 8: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S091,11.0,S091 Run 11: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S091,12.0,S091 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S092,3.0,S092 Run 3: Real Left vs Real Right,0.5,0.0,0.0,0.0
+S092,4.0,S092 Run 4: Imagined Left vs Imagined Right,0.3333,0.0,0.0,0.0
+S092,7.0,S092 Run 7: Real Left vs Real Right,0.5,0.0,0.0,0.0
+S092,8.0,S092 Run 8: Imagined Left vs Imagined Right,0.5,0.5,0.6667,0.5714
+S092,11.0,S092 Run 11: Real Left vs Real Right,0.1667,0.25,0.3333,0.2857
+S092,12.0,S092 Run 12: Imagined Left vs Imagined Right,0.5,0.5,0.3333,0.4
+S093,3.0,S093 Run 3: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S093,4.0,S093 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S093,7.0,S093 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S093,8.0,S093 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S093,11.0,S093 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S093,12.0,S093 Run 12: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S094,3.0,S094 Run 3: Real Left vs Real Right,0.8,1.0,0.5,0.6667
+S094,4.0,S094 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S094,7.0,S094 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S094,8.0,S094 Run 8: Imagined Left vs Imagined Right,0.6,0.6667,0.6667,0.6667
+S094,11.0,S094 Run 11: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S094,12.0,S094 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S095,3.0,S095 Run 3: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S095,4.0,S095 Run 4: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S095,7.0,S095 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S095,8.0,S095 Run 8: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S095,11.0,S095 Run 11: Real Left vs Real Right,0.4,0.0,0.0,0.0
+S095,12.0,S095 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S096,3.0,S096 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S096,4.0,S096 Run 4: Imagined Left vs Imagined Right,0.8,1.0,0.6667,0.8
+S096,7.0,S096 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S096,8.0,S096 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S096,11.0,S096 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S096,12.0,S096 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S097,3.0,S097 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S097,4.0,S097 Run 4: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S097,7.0,S097 Run 7: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S097,8.0,S097 Run 8: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S097,11.0,S097 Run 11: Real Left vs Real Right,0.2,0.3333,0.3333,0.3333
+S097,12.0,S097 Run 12: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S098,3.0,S098 Run 3: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S098,4.0,S098 Run 4: Imagined Left vs Imagined Right,0.2,0.0,0.0,0.0
+S098,7.0,S098 Run 7: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S098,8.0,S098 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S098,11.0,S098 Run 11: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S098,12.0,S098 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S099,3.0,S099 Run 3: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S099,4.0,S099 Run 4: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S099,7.0,S099 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S099,8.0,S099 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S099,11.0,S099 Run 11: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S099,12.0,S099 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.3333,0.4
+S100,3.0,S100 Run 3: Real Left vs Real Right,0.5,0.5,1.0,0.6667
+S100,4.0,S100 Run 4: Imagined Left vs Imagined Right,0.25,0.0,0.0,0.0
+S100,7.0,S100 Run 7: Real Left vs Real Right,0.25,0.3333,0.5,0.4
+S100,8.0,S100 Run 8: Imagined Left vs Imagined Right,1.0,1.0,1.0,1.0
+S100,11.0,S100 Run 11: Real Left vs Real Right,0.5,0.5,1.0,0.6667
+S100,12.0,S100 Run 12: Imagined Left vs Imagined Right,0.5,0.0,0.0,0.0
+S101,3.0,S101 Run 3: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S101,4.0,S101 Run 4: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S101,7.0,S101 Run 7: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S101,8.0,S101 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S101,11.0,S101 Run 11: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S101,12.0,S101 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S102,3.0,S102 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S102,4.0,S102 Run 4: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S102,7.0,S102 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S102,8.0,S102 Run 8: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S102,11.0,S102 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S102,12.0,S102 Run 12: Imagined Left vs Imagined Right,0.4,0.4,1.0,0.5714
+S103,3.0,S103 Run 3: Real Left vs Real Right,0.6,0.0,0.0,0.0
+S103,4.0,S103 Run 4: Imagined Left vs Imagined Right,0.8,0.75,1.0,0.8571
+S103,7.0,S103 Run 7: Real Left vs Real Right,0.6,0.5,0.5,0.5
+S103,8.0,S103 Run 8: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S103,11.0,S103 Run 11: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S103,12.0,S103 Run 12: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S104,3.0,S104 Run 3: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S104,4.0,S104 Run 4: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S104,7.0,S104 Run 7: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S104,8.0,S104 Run 8: Imagined Left vs Imagined Right,0.25,0.0,0.0,0.0
+S104,11.0,S104 Run 11: Real Left vs Real Right,0.2,0.25,0.5,0.3333
+S104,12.0,S104 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S105,3.0,S105 Run 3: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S105,4.0,S105 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S105,7.0,S105 Run 7: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S105,8.0,S105 Run 8: Imagined Left vs Imagined Right,0.2,0.3333,0.3333,0.3333
+S105,11.0,S105 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S105,12.0,S105 Run 12: Imagined Left vs Imagined Right,0.4,0.0,0.0,0.0
+S106,3.0,S106 Run 3: Real Left vs Real Right,0.6,0.6,1.0,0.75
+S106,4.0,S106 Run 4: Imagined Left vs Imagined Right,0.8,0.6667,1.0,0.8
+S106,7.0,S106 Run 7: Real Left vs Real Right,0.6,0.5,1.0,0.6667
+S106,8.0,S106 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S106,11.0,S106 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S106,12.0,S106 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S107,3.0,S107 Run 3: Real Left vs Real Right,0.4,0.4,1.0,0.5714
+S107,4.0,S107 Run 4: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S107,7.0,S107 Run 7: Real Left vs Real Right,0.8,0.75,1.0,0.8571
+S107,8.0,S107 Run 8: Imagined Left vs Imagined Right,0.6,0.5,0.5,0.5
+S107,11.0,S107 Run 11: Real Left vs Real Right,0.8,0.6667,1.0,0.8
+S107,12.0,S107 Run 12: Imagined Left vs Imagined Right,0.4,0.3333,0.5,0.4
+S108,3.0,S108 Run 3: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S108,4.0,S108 Run 4: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S108,7.0,S108 Run 7: Real Left vs Real Right,0.4,0.5,0.3333,0.4
+S108,8.0,S108 Run 8: Imagined Left vs Imagined Right,0.4,0.5,0.6667,0.5714
+S108,11.0,S108 Run 11: Real Left vs Real Right,0.6,0.6667,0.6667,0.6667
+S108,12.0,S108 Run 12: Imagined Left vs Imagined Right,0.8,1.0,0.5,0.6667
+S109,3.0,S109 Run 3: Real Left vs Real Right,0.2,0.0,0.0,0.0
+S109,4.0,S109 Run 4: Imagined Left vs Imagined Right,0.6,0.6,1.0,0.75
+S109,7.0,S109 Run 7: Real Left vs Real Right,0.6,1.0,0.3333,0.5
+S109,8.0,S109 Run 8: Imagined Left vs Imagined Right,0.2,0.25,0.5,0.3333
+S109,11.0,S109 Run 11: Real Left vs Real Right,0.4,0.3333,0.5,0.4
+S109,12.0,S109 Run 12: Imagined Left vs Imagined Right,0.6,0.0,0.0,0.0
+S001,,S001: Real vs Imagined Fists,0.5556,0.5385,0.5385,0.5385
+S001,,S001: Left vs Right Fists,0.5556,0.5385,0.5385,0.5385
+S002,,S002: Real vs Imagined Fists,0.6667,0.625,0.7692,0.6897
+S002,,S002: Left vs Right Fists,0.5185,0.5,0.3846,0.4348
+S003,,S003: Real vs Imagined Fists,0.5185,0.5,0.6154,0.5517
+S003,,S003: Left vs Right Fists,0.6296,0.6154,0.6154,0.6154
+S004,,S004: Real vs Imagined Fists,0.5185,0.5,0.6923,0.5806
+S004,,S004: Left vs Right Fists,0.5185,0.5,0.7692,0.6061
+S005,,S005: Real vs Imagined Fists,0.7037,0.6471,0.8462,0.7333
+S005,,S005: Left vs Right Fists,0.6296,0.75,0.4286,0.5455
+S006,,S006: Real vs Imagined Fists,0.4815,0.4286,0.2308,0.3
+S006,,S006: Left vs Right Fists,0.5185,0.5,0.4615,0.48
+S007,,S007: Real vs Imagined Fists,0.6667,0.625,0.7692,0.6897
+S007,,S007: Left vs Right Fists,0.6667,0.7,0.5385,0.6087
+S008,,S008: Real vs Imagined Fists,0.7778,0.8182,0.6923,0.75
+S008,,S008: Left vs Right Fists,0.4815,0.5,0.5714,0.5333
+S009,,S009: Real vs Imagined Fists,0.5926,0.5455,0.9231,0.6857
+S009,,S009: Left vs Right Fists,0.5185,0.5,0.3846,0.4348
+S010,,S010: Real vs Imagined Fists,0.4444,0.4286,0.4615,0.4444
+S010,,S010: Left vs Right Fists,0.6667,0.7,0.5385,0.6087
+S011,,S011: Real vs Imagined Fists,0.4444,0.4167,0.3846,0.4
+S011,,S011: Left vs Right Fists,0.4815,0.4762,0.7692,0.5882
+S012,,S012: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S012,,S012: Left vs Right Fists,0.6667,0.6111,0.8462,0.7097
+S013,,S013: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S013,,S013: Left vs Right Fists,0.5926,1.0,0.1538,0.2667
+S014,,S014: Real vs Imagined Fists,0.6296,0.5652,1.0,0.7222
+S014,,S014: Left vs Right Fists,0.5556,0.5455,0.8571,0.6667
+S015,,S015: Real vs Imagined Fists,0.4444,0.4,0.3077,0.3478
+S015,,S015: Left vs Right Fists,0.5185,0.5,0.3846,0.4348
+S016,,S016: Real vs Imagined Fists,0.5926,0.5625,0.6923,0.6207
+S016,,S016: Left vs Right Fists,0.3704,0.3571,0.3846,0.3704
+S017,,S017: Real vs Imagined Fists,0.4815,0.4667,0.5385,0.5
+S017,,S017: Left vs Right Fists,0.4444,0.375,0.2308,0.2857
+S018,,S018: Real vs Imagined Fists,0.6667,0.8333,0.3846,0.5263
+S018,,S018: Left vs Right Fists,0.5185,0.5385,0.5,0.5185
+S019,,S019: Real vs Imagined Fists,0.6296,0.6154,0.6154,0.6154
+S019,,S019: Left vs Right Fists,0.3704,0.3333,0.3077,0.32
+S020,,S020: Real vs Imagined Fists,0.5926,0.5455,0.9231,0.6857
+S020,,S020: Left vs Right Fists,0.2222,0.2941,0.3571,0.3226
+S021,,S021: Real vs Imagined Fists,0.5185,0.5,0.8462,0.6286
+S021,,S021: Left vs Right Fists,0.3704,0.3,0.2308,0.2609
+S022,,S022: Real vs Imagined Fists,0.8519,0.7647,1.0,0.8667
+S022,,S022: Left vs Right Fists,0.5556,0.5385,0.5385,0.5385
+S023,,S023: Real vs Imagined Fists,0.5185,0.5,0.3846,0.4348
+S023,,S023: Left vs Right Fists,0.5926,0.5789,0.7857,0.6667
+S024,,S024: Real vs Imagined Fists,0.5926,0.5714,0.6154,0.5926
+S024,,S024: Left vs Right Fists,0.4815,0.4667,0.5385,0.5
+S025,,S025: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S025,,S025: Left vs Right Fists,0.5185,0.5,0.5385,0.5185
+S026,,S026: Real vs Imagined Fists,0.4815,0.4615,0.4615,0.4615
+S026,,S026: Left vs Right Fists,0.7037,0.6923,0.6923,0.6923
+S027,,S027: Real vs Imagined Fists,0.5185,0.5,0.4615,0.48
+S027,,S027: Left vs Right Fists,0.4444,0.4,0.3077,0.3478
+S028,,S028: Real vs Imagined Fists,0.6667,0.7,0.5385,0.6087
+S028,,S028: Left vs Right Fists,0.5926,0.5833,0.5385,0.56
+S029,,S029: Real vs Imagined Fists,0.6296,0.5652,1.0,0.7222
+S029,,S029: Left vs Right Fists,0.3704,0.3333,0.3077,0.32
+S030,,S030: Real vs Imagined Fists,0.4444,0.4167,0.3846,0.4
+S030,,S030: Left vs Right Fists,0.2963,0.25,0.2308,0.24
+S031,,S031: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S031,,S031: Left vs Right Fists,0.4815,0.4762,0.7692,0.5882
+S032,,S032: Real vs Imagined Fists,0.8148,0.7222,1.0,0.8387
+S032,,S032: Left vs Right Fists,0.6296,0.5909,0.9286,0.7222
+S033,,S033: Real vs Imagined Fists,0.7778,0.7692,0.7692,0.7692
+S033,,S033: Left vs Right Fists,0.5185,0.5294,0.6429,0.5806
+S034,,S034: Real vs Imagined Fists,0.6154,0.6667,0.4615,0.5455
+S034,,S034: Left vs Right Fists,0.5,0.5,0.4615,0.48
+S035,,S035: Real vs Imagined Fists,0.7037,0.7273,0.6154,0.6667
+S035,,S035: Left vs Right Fists,0.4074,0.4375,0.5,0.4667
+S036,,S036: Real vs Imagined Fists,0.6296,0.6,0.6923,0.6429
+S036,,S036: Left vs Right Fists,0.4444,0.375,0.2308,0.2857
+S037,,S037: Real vs Imagined Fists,0.7308,0.75,0.6923,0.72
+S037,,S037: Left vs Right Fists,0.3462,0.3571,0.3846,0.3704
+S038,,S038: Real vs Imagined Fists,0.7407,0.7143,0.7692,0.7407
+S038,,S038: Left vs Right Fists,0.5556,0.6,0.2308,0.3333
+S039,,S039: Real vs Imagined Fists,0.5926,0.6,0.4615,0.5217
+S039,,S039: Left vs Right Fists,0.4815,0.4444,0.3077,0.3636
+S040,,S040: Real vs Imagined Fists,0.4444,0.4286,0.4615,0.4444
+S040,,S040: Left vs Right Fists,0.5556,0.55,0.7857,0.6471
+S041,,S041: Real vs Imagined Fists,0.7308,0.7143,0.7692,0.7407
+S041,,S041: Left vs Right Fists,0.4615,0.4286,0.2308,0.3
+S042,,S042: Real vs Imagined Fists,0.6296,0.6,0.6923,0.6429
+S042,,S042: Left vs Right Fists,0.5926,0.6,0.6429,0.6207
+S043,,S043: Real vs Imagined Fists,0.7778,0.8182,0.6923,0.75
+S043,,S043: Left vs Right Fists,0.6667,0.6667,0.6154,0.64
+S044,,S044: Real vs Imagined Fists,0.4444,0.4286,0.4615,0.4444
+S044,,S044: Left vs Right Fists,0.5926,0.5833,0.5385,0.56
+S045,,S045: Real vs Imagined Fists,0.2593,0.1111,0.0769,0.0909
+S045,,S045: Left vs Right Fists,0.4815,0.4286,0.2308,0.3
+S046,,S046: Real vs Imagined Fists,0.8889,0.8571,0.9231,0.8889
+S046,,S046: Left vs Right Fists,0.7407,0.75,0.6923,0.72
+S047,,S047: Real vs Imagined Fists,0.3333,0.3077,0.3077,0.3077
+S047,,S047: Left vs Right Fists,0.4815,0.4545,0.3846,0.4167
+S048,,S048: Real vs Imagined Fists,0.2593,0.3158,0.4615,0.375
+S048,,S048: Left vs Right Fists,0.5556,0.625,0.3571,0.4545
+S049,,S049: Real vs Imagined Fists,0.5185,0.5,0.5385,0.5185
+S049,,S049: Left vs Right Fists,0.6667,0.6111,0.8462,0.7097
+S050,,S050: Real vs Imagined Fists,0.7037,0.6667,0.7692,0.7143
+S050,,S050: Left vs Right Fists,0.5556,0.5714,0.3077,0.4
+S051,,S051: Real vs Imagined Fists,0.4444,0.4615,0.4286,0.4444
+S051,,S051: Left vs Right Fists,0.5185,0.5,0.5385,0.5185
+S052,,S052: Real vs Imagined Fists,0.5556,0.5385,0.5385,0.5385
+S052,,S052: Left vs Right Fists,0.5185,0.5,0.1538,0.2353
+S053,,S053: Real vs Imagined Fists,0.6667,0.6429,0.6923,0.6667
+S053,,S053: Left vs Right Fists,0.6667,0.6667,0.7143,0.6897
+S054,,S054: Real vs Imagined Fists,0.5185,0.5,0.6923,0.5806
+S054,,S054: Left vs Right Fists,0.5556,0.5294,0.6923,0.6
+S055,,S055: Real vs Imagined Fists,0.5185,0.5,0.3846,0.4348
+S055,,S055: Left vs Right Fists,0.6667,0.625,0.7692,0.6897
+S056,,S056: Real vs Imagined Fists,0.6296,0.5789,0.8462,0.6875
+S056,,S056: Left vs Right Fists,0.5185,0.5,0.3077,0.381
+S057,,S057: Real vs Imagined Fists,0.7407,0.6667,0.9231,0.7742
+S057,,S057: Left vs Right Fists,0.5926,0.75,0.2308,0.3529
+S058,,S058: Real vs Imagined Fists,0.6667,0.75,0.4615,0.5714
+S058,,S058: Left vs Right Fists,0.7037,0.7273,0.6154,0.6667
+S059,,S059: Real vs Imagined Fists,0.4074,0.3846,0.3846,0.3846
+S059,,S059: Left vs Right Fists,0.4815,0.4545,0.3846,0.4167
+S060,,S060: Real vs Imagined Fists,0.6296,0.6,0.6923,0.6429
+S060,,S060: Left vs Right Fists,0.4444,0.4167,0.3846,0.4
+S061,,S061: Real vs Imagined Fists,0.4444,0.4375,0.5385,0.4828
+S061,,S061: Left vs Right Fists,0.5185,0.5,0.2308,0.3158
+S062,,S062: Real vs Imagined Fists,0.6296,0.5882,0.7692,0.6667
+S062,,S062: Left vs Right Fists,0.4815,0.4667,0.5385,0.5
+S063,,S063: Real vs Imagined Fists,0.7407,0.6875,0.8462,0.7586
+S063,,S063: Left vs Right Fists,0.4815,0.5,0.6429,0.5625
+S064,,S064: Real vs Imagined Fists,0.4615,0.4737,0.6923,0.5625
+S064,,S064: Left vs Right Fists,0.5769,0.5833,0.5385,0.56
+S065,,S065: Real vs Imagined Fists,0.5185,0.5,0.6923,0.5806
+S065,,S065: Left vs Right Fists,0.6296,0.5882,0.7692,0.6667
+S066,,S066: Real vs Imagined Fists,0.6296,0.6667,0.4615,0.5455
+S066,,S066: Left vs Right Fists,0.5556,0.5714,0.3077,0.4
+S067,,S067: Real vs Imagined Fists,0.6667,0.6429,0.6923,0.6667
+S067,,S067: Left vs Right Fists,0.4815,0.5,0.6429,0.5625
+S068,,S068: Real vs Imagined Fists,0.4815,0.4706,0.6154,0.5333
+S068,,S068: Left vs Right Fists,0.4444,0.4286,0.4615,0.4444
+S069,,S069: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S069,,S069: Left vs Right Fists,0.5926,0.625,0.3846,0.4762
+S070,,S070: Real vs Imagined Fists,0.4815,0.4667,0.5385,0.5
+S070,,S070: Left vs Right Fists,0.5185,0.5,0.4615,0.48
+S071,,S071: Real vs Imagined Fists,0.6296,0.6154,0.6154,0.6154
+S071,,S071: Left vs Right Fists,0.4444,0.4167,0.3846,0.4
+S072,,S072: Real vs Imagined Fists,0.5385,0.5385,0.5385,0.5385
+S072,,S072: Left vs Right Fists,0.6923,1.0,0.3846,0.5556
+S073,,S073: Real vs Imagined Fists,0.6154,0.5882,0.7692,0.6667
+S073,,S073: Left vs Right Fists,0.5385,0.5333,0.6154,0.5714
+S074,,S074: Real vs Imagined Fists,0.5769,0.5714,0.6154,0.5926
+S074,,S074: Left vs Right Fists,0.5,0.5,0.3846,0.4348
+S075,,S075: Real vs Imagined Fists,0.5185,0.5,0.4615,0.48
+S075,,S075: Left vs Right Fists,0.5185,0.5333,0.5714,0.5517
+S076,,S076: Real vs Imagined Fists,0.6538,0.8333,0.3846,0.5263
+S076,,S076: Left vs Right Fists,0.4615,0.4706,0.6154,0.5333
+S077,,S077: Real vs Imagined Fists,0.5556,0.5333,0.6154,0.5714
+S077,,S077: Left vs Right Fists,0.4444,0.4762,0.7143,0.5714
+S078,,S078: Real vs Imagined Fists,0.6296,0.6154,0.6154,0.6154
+S078,,S078: Left vs Right Fists,0.5185,0.5,0.6154,0.5517
+S079,,S079: Real vs Imagined Fists,0.5185,0.5,0.3846,0.4348
+S079,,S079: Left vs Right Fists,0.4074,0.4211,0.6154,0.5
+S080,,S080: Real vs Imagined Fists,0.4444,0.4286,0.4615,0.4444
+S080,,S080: Left vs Right Fists,0.5926,0.625,0.3846,0.4762
+S081,,S081: Real vs Imagined Fists,0.6296,0.5882,0.7692,0.6667
+S081,,S081: Left vs Right Fists,0.5926,0.5882,0.7143,0.6452
+S082,,S082: Real vs Imagined Fists,0.4074,0.4,0.4615,0.4286
+S082,,S082: Left vs Right Fists,0.4815,0.4667,0.5385,0.5
+S083,,S083: Real vs Imagined Fists,0.8148,0.7857,0.8462,0.8148
+S083,,S083: Left vs Right Fists,0.4444,0.4615,0.4286,0.4444
+S084,,S084: Real vs Imagined Fists,0.4074,0.3846,0.3846,0.3846
+S084,,S084: Left vs Right Fists,0.6296,0.8,0.3077,0.4444
+S085,,S085: Real vs Imagined Fists,0.7778,0.8182,0.6923,0.75
+S085,,S085: Left vs Right Fists,0.6667,0.625,0.7692,0.6897
+S086,,S086: Real vs Imagined Fists,0.8148,0.7857,0.8462,0.8148
+S086,,S086: Left vs Right Fists,0.5556,0.6,0.4286,0.5
+S087,,S087: Real vs Imagined Fists,0.4444,0.4167,0.3846,0.4
+S087,,S087: Left vs Right Fists,0.7037,0.8,0.5714,0.6667
+S088,,S088: Real vs Imagined Fists,0.3429,0.35,0.4118,0.3784
+S088,,S088: Left vs Right Fists,0.6,0.56,0.8235,0.6667
+S089,,S089: Real vs Imagined Fists,0.5667,0.5263,0.7143,0.6061
+S089,,S089: Left vs Right Fists,0.5667,0.5625,0.6,0.5806
+S090,,S090: Real vs Imagined Fists,0.5185,0.5,0.4615,0.48
+S090,,S090: Left vs Right Fists,0.6296,0.625,0.7143,0.6667
+S091,,S091: Real vs Imagined Fists,0.7037,0.6923,0.6923,0.6923
+S091,,S091: Left vs Right Fists,0.5926,0.6,0.6429,0.6207
+S092,,S092: Real vs Imagined Fists,0.4857,0.4762,0.5882,0.5263
+S092,,S092: Left vs Right Fists,0.5143,0.5,0.4706,0.4848
+S093,,S093: Real vs Imagined Fists,0.5926,0.5625,0.6923,0.6207
+S093,,S093: Left vs Right Fists,0.5556,0.5263,0.7692,0.625
+S094,,S094: Real vs Imagined Fists,0.5556,0.5455,0.4615,0.5
+S094,,S094: Left vs Right Fists,0.5926,0.5833,0.5385,0.56
+S095,,S095: Real vs Imagined Fists,0.6296,0.5789,0.8462,0.6875
+S095,,S095: Left vs Right Fists,0.4444,0.4444,0.6154,0.5161
+S096,,S096: Real vs Imagined Fists,0.4815,0.4444,0.3077,0.3636
+S096,,S096: Left vs Right Fists,0.5185,0.5,0.6154,0.5517
+S097,,S097: Real vs Imagined Fists,0.5556,0.5385,0.5385,0.5385
+S097,,S097: Left vs Right Fists,0.2222,0.25,0.3077,0.2759
+S098,,S098: Real vs Imagined Fists,0.4815,0.4667,0.5385,0.5
+S098,,S098: Left vs Right Fists,0.4444,0.4444,0.6154,0.5161
+S099,,S099: Real vs Imagined Fists,0.4815,0.4667,0.5385,0.5
+S099,,S099: Left vs Right Fists,0.4444,0.4167,0.3846,0.4
+S100,,S100: Real vs Imagined Fists,0.5909,0.5714,0.7273,0.64
+S100,,S100: Left vs Right Fists,0.5909,0.5833,0.6364,0.6087
+S101,,S101: Real vs Imagined Fists,0.6667,0.6667,0.6154,0.64
+S101,,S101: Left vs Right Fists,0.2963,0.2,0.1538,0.1739
+S102,,S102: Real vs Imagined Fists,0.4615,0.4545,0.3846,0.4167
+S102,,S102: Left vs Right Fists,0.5,0.5,0.5385,0.5185
+S103,,S103: Real vs Imagined Fists,0.3333,0.2222,0.1538,0.1818
+S103,,S103: Left vs Right Fists,0.6296,0.5789,0.8462,0.6875
+S104,,S104: Real vs Imagined Fists,0.6667,0.6667,0.6154,0.64
+S104,,S104: Left vs Right Fists,0.5926,0.5556,0.7692,0.6452
+S105,,S105: Real vs Imagined Fists,0.5185,0.5,0.7692,0.6061
+S105,,S105: Left vs Right Fists,0.5556,0.5625,0.6429,0.6
+S106,,S106: Real vs Imagined Fists,0.5556,0.5263,0.7692,0.625
+S106,,S106: Left vs Right Fists,0.7037,0.6923,0.6923,0.6923
+S107,,S107: Real vs Imagined Fists,0.4074,0.3846,0.3846,0.3846
+S107,,S107: Left vs Right Fists,0.4074,0.2857,0.1538,0.2
+S108,,S108: Real vs Imagined Fists,0.5926,0.6,0.4615,0.5217
+S108,,S108: Left vs Right Fists,0.5185,0.5294,0.6429,0.5806
+S109,,S109: Real vs Imagined Fists,0.6667,0.6429,0.6923,0.6667
+S109,,S109: Left vs Right Fists,0.5185,0.5,0.3846,0.4348
